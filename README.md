@@ -1,2 +1,2 @@
-# vody-coding-challenge
+# movie-coding-challenge
 movie query 
