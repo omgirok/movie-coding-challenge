@@ -4,7 +4,7 @@ function findMovie(req, res) {
     var id = data.id;
     
     // query goes here
-
+    
     // save query to json object
 
     // send json object
@@ -25,7 +25,7 @@ function findShow(req, res) {
 }
 
 function search(req, res) {
-    
+
     res.send();
 }
 module.exports = app;
