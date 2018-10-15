@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omgirok/movie-coding-challenge.git"
+    "url": "git+https://github.com/omgirok/movie-tv-coding-challenge.git"
   },
   "keywords": [
     "movie",
@@ -18,9 +18,9 @@
   "author": "orion ou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/omgirok/movie-coding-challenge/issues"
+    "url": "https://github.com/omgirok/movie-tv-coding-challenge/issues"
   },
-  "homepage": "https://github.com/omgirok/movie-coding-challenge#readme",
+  "homepage": "https://github.com/omgirok/movie-tv-coding-challenge#readme",
   "dependencies": {
     "express": "^4.16.4",
     "path": "^0.12.7"
