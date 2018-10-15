@@ -1,0 +1,28 @@
+{
+  "name": "movie-coding-challenge",
+  "version": "1.0.0",
+  "description": "movie database query api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omgirok/movie-coding-challenge.git"
+  },
+  "keywords": [
+    "movie",
+    "query",
+    "api"
+  ],
+  "author": "orion ou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omgirok/movie-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/omgirok/movie-coding-challenge#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
