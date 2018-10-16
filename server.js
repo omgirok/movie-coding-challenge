@@ -1,10 +1,13 @@
 // include modules
 const express = require('express');
 const app = express();
-const path = require('path');
 const port = 8000;
 const routes = require('./routes');
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // routes
 app.use('/', routes);
