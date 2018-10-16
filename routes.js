@@ -6,7 +6,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/movies/:id', db.findMovie);
 app.get('/tv_show/:id', db.findShow);
-app.post('/db/search/', db.search);
+app.get('/db/search/', db.search);
 
 module.exports = app;
 
