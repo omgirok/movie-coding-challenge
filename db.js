@@ -9,22 +9,26 @@ const tvArray = data.data.shows;
 module.exports.findMovie = function(req, res) {    
     var id = req.params.id;
     if (id < 1 || id > 100) {
-        res.end({'error': 'Cound not find movie corresponding to id=' + id});
+        res.json({'error': 'Cound not find movie corresponding to id=' + id});
+        res.end();
     }
     else {
         var item = movieArray[id-1];
-        res.end(item);
+        res.json(item);
+        res.end();
     }
 }
 
 module.exports.findShow = function(req, res) {
     var id = req.params.id;
     if (id < 1 || id > 100) {
-        res.send({'error': 'Cound not find movie corresponding to id=' + id});
+        res.json({'error': 'Cound not find movie corresponding to id=' + id});
+        res.end();
     }
     else {
         var item = tvArray[id-1];
-        res.end(item);
+        res.json(item);
+        res.end();
     }
 }
 
@@ -36,7 +40,8 @@ module.exports.search = function(req, res) {
     // check if search string is valid
     if (searchString == undefined) {
         results = {"error": "please search using the '?query=${keywords}' query string syntax"};
-        res.end(results);
+        res.json(results);
+        res.end();
         return
     }
     else {
@@ -53,7 +58,8 @@ module.exports.search = function(req, res) {
         }
         var totalPages = (Math.floor((allResults.length) / 10) + 1);
         if (page > totalPages) {
-            res.end({"error": "page number " + page + " does not exist, results only go up to page " + totalPages + "."});
+            res.json({"error": "page number " + page + " does not exist, results only go up to page " + totalPages + "."});
+            res.end();
             return;
         }
         var thisPageResults = [];
@@ -70,7 +76,8 @@ module.exports.search = function(req, res) {
                 "results": thisPageResults
             };
         // res.set('Content-Type', 'application/json');
-        res.end(results);
+        res.json(results);
+        res.end();
         return;
     }
 }
