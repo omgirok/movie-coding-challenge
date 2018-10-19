@@ -38,7 +38,7 @@ module.exports.search = function(req, res) {
     var searchString = req.query.query;
     var page = req.query.page || 1;
     // check if search string is valid
-    if (searchString == undefined) {
+    if (searchString == undefined || searchString == '') {
         results = {"error": "please search using the '?query=${keywords}' query string syntax"};
         res.json(results);
         res.end();
