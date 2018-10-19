@@ -4,6 +4,7 @@ const db = require('./db');
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
+// api endpoints
 app.get('/movies/:id', db.findMovie);
 app.get('/tv_show/:id', db.findShow);
 app.get('/db/search', db.search);
